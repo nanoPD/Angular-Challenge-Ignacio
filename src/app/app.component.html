@@ -1,5 +1,8 @@
 <div class="container">
-  <app-search-box></app-search-box>
 
-  <app-table></app-table>
+  <app-search-box (searchFilter)="onSearchFilter($event)" ></app-search-box>
+
+  <app-table [searchValue]="search_input"></app-table>
+
 </div>
+  
